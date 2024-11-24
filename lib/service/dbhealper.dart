@@ -1,6 +1,6 @@
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
-import 'package:hopeflow/user.dart';
+import 'package:hopeflow/service/user.dart';
 
 class Dbhealper {
   late Database _database;

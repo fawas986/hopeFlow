@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hopeflow/home.dart';
-import 'package:hopeflow/register.dart';
+import 'package:hopeflow/splash.dart';
+
 import 'package:hopeflow/welcomepage.dart';
 
 void main() {
@@ -13,6 +13,6 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home:Welcome_page());
+    return MaterialApp(debugShowCheckedModeBanner: false, home:Splash());
   }
 }

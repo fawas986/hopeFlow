@@ -4,10 +4,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:hopeflow/dbhealper.dart';
-import 'package:hopeflow/intro.dart';
+import 'package:hopeflow/service/dbhealper.dart';
+
 import 'package:hopeflow/register.dart';
-import 'package:hopeflow/user.dart';
+import 'package:hopeflow/service/user.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -36,16 +36,7 @@ class _HomeState extends State<Home> {
             textStyle: TextStyle(color: Colors.white, letterSpacing: .5),
           ),
         ),
-        actions: [
-          IconButton(
-              onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (BuildContext) {
-                  return Intro();
-                }));
-              },
-              icon: Icon(Icons.help,color: Colors.white,))
-        ],
+
       ),
       body: Column(
         children: [
@@ -92,25 +83,7 @@ class _HomeState extends State<Home> {
                 ),
               )),
           Mylist(),
-          Container(
-              width: 100,
-              height: 50,
-              child: ElevatedButton(style: ButtonStyle(
-                  shape: WidgetStateProperty.all<RoundedRectangleBorder>(
-                      RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(18.0),
-                          side: BorderSide(color: Color(0xFF7E2124))
-                      )
-                  )
-              ),
 
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (BuildConext) {
-                      return Register();
-                    }));
-                  },
-                  child: Icon(Icons.add))),
           SizedBox(height: 20,)
         ],
       ),

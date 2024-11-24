@@ -35,7 +35,6 @@ class _BloodDonationSignUpPageState extends State<BloodDonationSignUpPage> {
     return Scaffold(
       body: Stack(
         children: [
-          // Background image container (optional customization)
 
           Container(
             color: Colors.black.withOpacity(0.3),
@@ -124,7 +123,7 @@ class _BloodDonationSignUpPageState extends State<BloodDonationSignUpPage> {
                           }
                         },
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.redAccent,
+                          backgroundColor: Color(0xFF7E2124),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10.0),
                           ),
@@ -132,7 +131,7 @@ class _BloodDonationSignUpPageState extends State<BloodDonationSignUpPage> {
                         ),
                         child: Text(
                           'Sign Up',
-                          style: TextStyle(fontSize: 18.0),
+                          style: TextStyle(fontSize: 18.0,color: Colors.white),
                         ),
                       ),
                     ),

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:hopeflow/dbhealper.dart';
+import 'package:hopeflow/service/dashboard.dart';
+import 'package:hopeflow/service/dbhealper.dart';
 import 'package:hopeflow/home.dart';
-import 'package:hopeflow/user.dart';
+import 'package:hopeflow/service/user.dart';
 import 'package:intl/intl.dart';
 
 class Register extends StatefulWidget {
@@ -45,7 +46,7 @@ class _RegisterState extends State<Register> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(0xFF050622),
+        backgroundColor: Color(0xFF7E2124),
         title: Text(
           "Registeration",
           style: TextStyle(color: Colors.white),
@@ -235,7 +236,7 @@ class _RegisterState extends State<Register> {
                           dbhealper.insertuser(u).then((onValue) {
                             Navigator.push(context,
                                 MaterialPageRoute(builder: (BuildContext) {
-                              return Home();
+                              return HomePage();
                             }));
                           });
                         }
@@ -243,7 +244,7 @@ class _RegisterState extends State<Register> {
                       child: Text("Register",
                           style: TextStyle(color: Colors.white)),
                       style: ElevatedButton.styleFrom(
-                          backgroundColor: Color(0xFF050622)),
+                          backgroundColor: Color(0xFF7E2124)),
                     ))
               ],
             ),

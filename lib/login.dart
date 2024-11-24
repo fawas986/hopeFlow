@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hopeflow/service/dashboard.dart';
 import 'package:hopeflow/home.dart';
 
 class Login extends StatefulWidget {
@@ -88,7 +89,7 @@ class _LoginState extends State<Login> {
                     SizedBox(height: 10,),
                     Align(
                         alignment: Alignment.centerRight,
-                        child: Text("Forgot Password ?",style: TextStyle(color: Colors.red),)),
+                        child: Text("Forgot Password ?",style: TextStyle(color: Color(0xFF7E2124)),)),
                     SizedBox(height: 10.0),
                     SizedBox(
                       width: double.infinity,
@@ -97,11 +98,11 @@ class _LoginState extends State<Login> {
                           if (_formkey.currentState!.validate()){
                           Navigator.push(context,
                               MaterialPageRoute(builder: (BuildConext) {
-                                return Home();
+                                return HomePage();
                               }));}
                         },
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.redAccent,
+                          backgroundColor: Color(0xFF7E2124),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10.0),
                           ),
@@ -109,7 +110,7 @@ class _LoginState extends State<Login> {
                         ),
                         child: Text(
                           'Log In',
-                          style: TextStyle(fontSize: 18.0),
+                          style: TextStyle(fontSize: 18.0,color: Colors.white),
                         ),
                       ),
                     ),
@@ -121,7 +122,7 @@ class _LoginState extends State<Login> {
                         SizedBox(width: 10,),
                         InkWell(
 
-                            child: Text("Sign up",style: TextStyle(color: Colors.redAccent),))
+                            child: Text("Sign up",style: TextStyle(color: Color(0xFF7E2124)),))
                       ],
                     )
                   ],

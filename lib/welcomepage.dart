@@ -54,7 +54,7 @@ class _Welcome_pageState extends State<Welcome_page> {
                   elevation: 8.0, // Controls shadow depth
                   shadowColor: Colors.red, // Custom shadow color
                   padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
-                  backgroundColor: Colors.redAccent, // Button color
+                  backgroundColor: Color(0xFF7E2124), // Button color
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(30.0), // Rounded corners
                   ),
