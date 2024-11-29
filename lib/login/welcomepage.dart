@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:hopeflow/login.dart';
-import 'package:hopeflow/signup.dart';
+import 'package:hopeflow/login/login.dart';
+import 'package:hopeflow/login/signup.dart';
 
 class Welcome_page extends StatefulWidget {
   const Welcome_page({super.key});

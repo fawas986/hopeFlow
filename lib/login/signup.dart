@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hopeflow/home.dart';
+import 'package:hopeflow/dashboard.dart';
 
 class BloodDonationSignUpPage extends StatefulWidget {
   @override
@@ -118,7 +118,7 @@ class _BloodDonationSignUpPageState extends State<BloodDonationSignUpPage> {
                           if (_formKey.currentState!.validate()) {
                             Navigator.push(context,
                                 MaterialPageRoute(builder: (BuildConext) {
-                                  return Home();
+                                  return HomePage();
                                 }));
                           }
                         },

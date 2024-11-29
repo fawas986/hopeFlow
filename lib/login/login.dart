@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hopeflow/service/dashboard.dart';
-import 'package:hopeflow/home.dart';
+import 'package:hopeflow/dashboard.dart';
 
 class Login extends StatefulWidget {
   @override

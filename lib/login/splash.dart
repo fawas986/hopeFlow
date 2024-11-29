@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:hopeflow/home.dart';
-import 'package:hopeflow/welcomepage.dart';
+import 'package:hopeflow/login/welcomepage.dart';
 
 class Splash extends StatefulWidget {
   const Splash({super.key});

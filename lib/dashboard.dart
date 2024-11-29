@@ -1,23 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:hopeflow/home.dart';
-import 'package:hopeflow/login.dart';
-import 'package:hopeflow/register.dart';
-import 'package:hopeflow/request.dart';
-
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: HomePage(),
-    );
-  }
-}
+import 'package:hopeflow/reg_req/register.dart';
+import 'package:hopeflow/reg_req/request.dart';
 
 class HomePage extends StatefulWidget {
   @override

@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:hopeflow/service/dashboard.dart';
+import 'package:hopeflow/dashboard.dart';
+
 
 class Request extends StatefulWidget {
   const Request({super.key});
@@ -16,7 +17,7 @@ class _RequestState extends State<Request> {
     return Scaffold(
 
           appBar: AppBar(
-            title: Text('Request Blood'),
+            title: Text('Request Blood',style: TextStyle(color: Colors.white),),
             backgroundColor: Color(0xFF7E2124),
           ),
           body: SingleChildScrollView(
@@ -27,10 +28,7 @@ class _RequestState extends State<Request> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      'Request Blood',
-                      style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
-                    ),
+
                     SizedBox(height: 20),
                     // Blood Group Dropdown
                     DropdownButtonFormField<String>(
@@ -107,7 +105,7 @@ class _RequestState extends State<Request> {
                             );
                           }
                         },
-                        child: Text('Submit Request'),
+                        child: Text('Submit Request',style: TextStyle(color: Colors.white),),
                       ),
                     ),
                   ],

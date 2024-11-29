@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:hopeflow/splash.dart';
+import 'package:hopeflow/login/splash.dart';
 
-import 'package:hopeflow/welcomepage.dart';
+import 'package:hopeflow/login/welcomepage.dart';
 
 void main() {
   runApp(const MyApp());

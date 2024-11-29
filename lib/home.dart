@@ -1,12 +1,11 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:hopeflow/service/dbhealper.dart';
 
-import 'package:hopeflow/register.dart';
+import 'package:hopeflow/reg_req/register.dart';
 import 'package:hopeflow/service/user.dart';
 
 class Home extends StatefulWidget {
@@ -120,14 +119,19 @@ class _MylistState extends State<Mylist> {
 
                 decoration:
                     BoxDecoration(border: Border.all(color: Color(0xFF7E2124),width: 2),borderRadius: BorderRadius.circular(20)),
-                child: ListTile(
-                  leading: CircleAvatar(
-                    child: Text("${snapshot.data![index].blood}"),
+                child: GestureDetector(
+                  onLongPress: (){
+
+                  },
+                  child: ListTile(
+                    leading: CircleAvatar(
+                      child: Text("${snapshot.data![index].blood}"),
+                    ),
+                    title: Text("${snapshot.data![index].name}"),
+                    subtitle: Text("${snapshot.data![index].ph}"),
+                    trailing:
+                        IconButton(onPressed: () {}, icon: Icon(Icons.call)),
                   ),
-                  title: Text("${snapshot.data![index].name}"),
-                  subtitle: Text("${snapshot.data![index].ph}"),
-                  trailing:
-                      IconButton(onPressed: () {}, icon: Icon(Icons.call)),
                 ),
               );
             },

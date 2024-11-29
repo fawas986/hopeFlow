@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:hopeflow/service/dashboard.dart';
+import 'package:hopeflow/dashboard.dart';
+
 import 'package:hopeflow/service/dbhealper.dart';
-import 'package:hopeflow/home.dart';
 import 'package:hopeflow/service/user.dart';
 import 'package:intl/intl.dart';
 
@@ -61,7 +61,7 @@ class _RegisterState extends State<Register> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  "Fill out the for to add a Donor",
+                  "Fill out the form to add a Donor",
                   style: GoogleFonts.aBeeZee(
                     textStyle: TextStyle(
                         color: Color(0xFF050622),
